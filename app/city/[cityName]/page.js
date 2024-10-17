@@ -1,9 +1,10 @@
-import Header from "./components/Header";
-import WeatherCard from "./components/WeatherCard";
-import styles from "./page.module.css";
+import WeatherIcon from "@/app/components/WeatherIcon";
+import Header from "../../components/Header";
+import WeatherCard from "../../components/WeatherCard";
+import styles from "../../page.module.css";
 
-export default async function Home() {
-  const city = "Shibuya";
+export default async function City({ params }) {
+  const city = params.cityName;
   const queryURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.WEATHER_API_KEY}&units=imperial`;
 
   const request = await fetch(queryURL);
