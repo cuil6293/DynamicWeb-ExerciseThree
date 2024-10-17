@@ -61,3 +61,37 @@
 .weatherInfo h4 {
   font-size: 30px;
 }
+
+@media (max-width: 780px) {
+  .headerWrapper {
+    margin: 0 auto;
+  }
+
+  .headerWrapper ul {
+    gap: 40px;
+    padding: 0;
+  }
+
+  .weatherCardWrapper {
+    border-radius: 0;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .weatherIcon {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+  }
+
+  .weatherInfo {
+    padding-left: 0;
+    text-align: center;
+  }
+}
